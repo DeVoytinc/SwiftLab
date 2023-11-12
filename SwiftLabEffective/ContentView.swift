@@ -8,14 +8,32 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var selectTab: Tab = .home
+    
+    init() {
+        UITabBar.appearance().isHidden = true
+    }
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        ZStack{
+            VStack{
+                TabView(selection: $selectTab){
+                    ViewHome()
+                        .tag(Tab.home)
+                    ViewCalendar()
+                        .tag(Tab.calendar)
+                    ViewMessage()
+                        .tag(Tab.message)
+                    ViewProfile()
+                        .tag(Tab.profile)
+                }
+            }
+            VStack{
+                Spacer()
+                CustomTabBar(selectedTab: $selectTab)
+            }
         }
-        .padding()
     }
 }
 
