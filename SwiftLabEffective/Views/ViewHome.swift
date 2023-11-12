@@ -11,18 +11,20 @@ import SwiftUI
 struct ViewHome: View {
     var body: some View{
         ZStack{
-            VStack{
-                WelcomeView()
-                Spacer().frame(height: 25)
-                DoctorCard()
-                Spacer().frame(height: 20)
-                CustomTextField()
-                Spacer().frame(height: 20)
-                CategoryRowView()
-                
-                    
-                Spacer()
+            ScrollView (showsIndicators: false) {
+                VStack (alignment: .leading, spacing: 20){
+                    WelcomeView()
+                    DoctorCard()
+                    CustomTextField()
+                    CategoryRowView()
+                    Text("Near Doctor")
+                        .font(Font.custom("Poppins-Bold", size: 16))
+                        .foregroundColor(Color("myBlackText"))
+                    NearDoctorsListView()
+                    Spacer().frame(height: 50)
+                }
             }
+            
         }
         .padding([.leading, .trailing], 24)
     }

@@ -9,8 +9,8 @@ import SwiftUI
 
 enum Tab: String, CaseIterable {
     case home
-    case message
     case calendar
+    case message
     case profile
 }
 

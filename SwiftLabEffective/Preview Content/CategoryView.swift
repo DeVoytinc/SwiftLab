@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct Category {
-    var id: UUID = UUID()
     var imageName: String
     var name: String
 }
