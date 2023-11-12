@@ -57,6 +57,7 @@
 		CEF2238B2B014CC500FA8DC1 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF2238A2B014CC500FA8DC1 /* CustomTextField.swift */; };
 		CEF2238D2B01541500FA8DC1 /* DoctorCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF2238C2B01541400FA8DC1 /* DoctorCard.swift */; };
 		CEF2238F2B01543E00FA8DC1 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF2238E2B01543E00FA8DC1 /* WelcomeView.swift */; };
+		CEF223912B0162F200FA8DC1 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF223902B0162F200FA8DC1 /* CategoryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,6 +132,7 @@
 		CEF2238A2B014CC500FA8DC1 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		CEF2238C2B01541400FA8DC1 /* DoctorCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorCard.swift; sourceTree = "<group>"; };
 		CEF2238E2B01543E00FA8DC1 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		CEF223902B0162F200FA8DC1 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +202,7 @@
 				CEF2238A2B014CC500FA8DC1 /* CustomTextField.swift */,
 				CEF2238C2B01541400FA8DC1 /* DoctorCard.swift */,
 				CEF2238E2B01543E00FA8DC1 /* WelcomeView.swift */,
+				CEF223902B0162F200FA8DC1 /* CategoryView.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -444,6 +447,7 @@
 				CEF223092AFFAD5A00FA8DC1 /* ContentView.swift in Sources */,
 				CEF2233A2AFFBB8A00FA8DC1 /* CustomTabBar.swift in Sources */,
 				CEF223382AFFB57F00FA8DC1 /* ViewProfile.swift in Sources */,
+				CEF223912B0162F200FA8DC1 /* CategoryView.swift in Sources */,
 				CEF2238F2B01543E00FA8DC1 /* WelcomeView.swift in Sources */,
 				CEF2238B2B014CC500FA8DC1 /* CustomTextField.swift in Sources */,
 				CEF223072AFFAD5A00FA8DC1 /* SwiftLabEffectiveApp.swift in Sources */,

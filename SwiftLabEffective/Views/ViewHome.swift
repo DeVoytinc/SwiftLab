@@ -17,6 +17,8 @@ struct ViewHome: View {
                 DoctorCard()
                 Spacer().frame(height: 20)
                 CustomTextField()
+                Spacer().frame(height: 20)
+                CategoryRowView()
                 
                     
                 Spacer()
