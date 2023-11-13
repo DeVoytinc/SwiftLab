@@ -12,9 +12,9 @@ struct WelcomeView: View {
         HStack{
             VStack (alignment: .leading) {
                 Text("Hello,")
-                    .font(Font.custom("Poppins-Regular", size: 16))
+                    .font(Font.custom(FontTheme.poppinsRegular, size: 16))
                     .foregroundColor(Color("myGrayColor"))
-                Text("Hi James").font(Font.custom("Poppins-Bold", size: 20))
+                Text("Hi James").font(Font.custom(FontTheme.poppinsBold, size: 20))
             }
             Spacer()
             Image("avatar")

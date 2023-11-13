@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct Doctor {
+    var id: UUID = UUID()
     var imageName: String
     var name: String
     var specialization: String
@@ -50,45 +51,46 @@ struct DoctorView: View {
                     .frame(width: 48, height: 48)
                 VStack (alignment: .leading) {
                     Text(doctor.name)
-                        .font(Font.custom("Poppins-Bold", size: 16))
+                        .font(Font.custom(FontTheme.poppinsBold, size: 16))
+                        .foregroundColor(ColorTheme.Text.Primary)
                     Text(doctor.specialization)
-                        .font(Font.custom("Poppins-Regular", size: 14))
-                        .foregroundColor(Color("myGrayColor"))
+                        .font(Font.custom(FontTheme.poppinsRegular, size: 14))
+                        .foregroundColor(ColorTheme.Text.Secondary)
                 }
                 Spacer()
                 Image("location")
                     .resizable()
                     .frame(width: 16, height: 16)
-                    .colorMultiply(Color("myGrayColor"))
+                    .colorMultiply(ColorTheme.Text.Secondary)
                 Text(String(doctor.distance) + " KM")
-                    .font(Font.custom("Poppins-Regular", size: 14))
-                    .foregroundColor(Color("myGrayColor"))
+                    .font(Font.custom(FontTheme.poppinsRegular, size: 14))
+                    .foregroundColor(ColorTheme.Text.Secondary)
             }
             Divider().frame(height: 20)
             HStack{
                 Image("clock")
                     .resizable()
                     .frame(width: 20, height: 20)
-                    .colorMultiply(.yellow)
+                    .colorMultiply(ColorTheme.Text.Yellow)
                 Text(String(doctor.mark) + " (" + String(doctor.reviewsCount) + " Reviews)")
-                    .font(Font.custom("Poppins-Regular", size: 12))
-                    .foregroundColor(.yellow)
+                    .font(Font.custom(FontTheme.poppinsRegular, size: 12))
+                    .foregroundColor(ColorTheme.Text.Yellow)
                 Spacer()
                 Image("clock")
                     .resizable()
                     .frame(width: 20, height: 20)
-                    .colorMultiply(Color("myPrimaryColor"))
+                    .colorMultiply(ColorTheme.Primary)
                 Text("Open at " + doctor.openAtTime)
-                    .font(Font.custom("Poppins-Regular", size: 12))
-                    .foregroundColor(Color("myPrimaryColor"))
+                    .font(Font.custom(FontTheme.poppinsRegular, size: 12))
+                    .foregroundColor(ColorTheme.Primary)
                 Spacer()
             }
         }
         .padding(.vertical, 20)
         .padding(.horizontal, 16)
-        .background(Color("myBGColor"))
+        .background(ColorTheme.BG.Background)
         .cornerRadius(12)
-        .shadow(color: Color("myGrayColor").opacity(0.04), radius: 10, x: 2, y: 12)
+        .shadow(color: ColorTheme.Text.Secondary.opacity(0.04), radius: 10, x: 2, y: 12)
     }
         
 }

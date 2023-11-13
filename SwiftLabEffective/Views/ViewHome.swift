@@ -18,8 +18,8 @@ struct ViewHome: View {
                     CustomTextField()
                     CategoryRowView()
                     Text("Near Doctor")
-                        .font(Font.custom("Poppins-Bold", size: 16))
-                        .foregroundColor(Color("myBlackText"))
+                        .font(Font.custom(FontTheme.poppinsBold, size: 16))
+                        .foregroundColor(ColorTheme.Text.Primary)
                     NearDoctorsListView()
                     Spacer().frame(height: 50)
                 }

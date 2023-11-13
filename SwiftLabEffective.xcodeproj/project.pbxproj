@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE8FC1EE2B02572000EBE442 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE8FC1ED2B02572000EBE442 /* Colors.xcassets */; };
+		CE8FC1F12B02579800EBE442 /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE8FC1F02B02579800EBE442 /* Icons.xcassets */; };
+		CE8FC1F42B025AEE00EBE442 /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8FC1F32B025AEE00EBE442 /* ColorTheme.swift */; };
+		CE8FC1F62B026D6E00EBE442 /* FontTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8FC1F52B026D6E00EBE442 /* FontTheme.swift */; };
 		CEF223072AFFAD5A00FA8DC1 /* SwiftLabEffectiveApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF223062AFFAD5A00FA8DC1 /* SwiftLabEffectiveApp.swift */; };
 		CEF223092AFFAD5A00FA8DC1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF223082AFFAD5A00FA8DC1 /* ContentView.swift */; };
 		CEF2230B2AFFAD6200FA8DC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEF2230A2AFFAD6200FA8DC1 /* Assets.xcassets */; };
@@ -79,6 +83,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE8FC1ED2B02572000EBE442 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		CE8FC1F02B02579800EBE442 /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
+		CE8FC1F32B025AEE00EBE442 /* ColorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTheme.swift; sourceTree = "<group>"; };
+		CE8FC1F52B026D6E00EBE442 /* FontTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontTheme.swift; sourceTree = "<group>"; };
 		CEF223032AFFAD5A00FA8DC1 /* SwiftLabEffective.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftLabEffective.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEF223062AFFAD5A00FA8DC1 /* SwiftLabEffectiveApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLabEffectiveApp.swift; sourceTree = "<group>"; };
 		CEF223082AFFAD5A00FA8DC1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -162,6 +170,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE8FC1EF2B02573000EBE442 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				CE8FC1ED2B02572000EBE442 /* Colors.xcassets */,
+				CEF2230A2AFFAD6200FA8DC1 /* Assets.xcassets */,
+				CE8FC1F02B02579800EBE442 /* Icons.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		CE8FC1F22B025AC000EBE442 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				CE8FC1F32B025AEE00EBE442 /* ColorTheme.swift */,
+				CE8FC1F52B026D6E00EBE442 /* FontTheme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
 		CEF222FA2AFFAD5A00FA8DC1 = {
 			isa = PBXGroup;
 			children = (
@@ -185,12 +212,13 @@
 		CEF223052AFFAD5A00FA8DC1 /* SwiftLabEffective */ = {
 			isa = PBXGroup;
 			children = (
+				CE8FC1EF2B02573000EBE442 /* Assets */,
 				CEF223892B00066000FA8DC1 /* Info.plist */,
+				CE8FC1F22B025AC000EBE442 /* Theme */,
 				CEF2233C2B00010B00FA8DC1 /* Fonts */,
 				CEF223302AFFB4E400FA8DC1 /* Views */,
 				CEF223062AFFAD5A00FA8DC1 /* SwiftLabEffectiveApp.swift */,
 				CEF223082AFFAD5A00FA8DC1 /* ContentView.swift */,
-				CEF2230A2AFFAD6200FA8DC1 /* Assets.xcassets */,
 				CEF2230C2AFFAD6200FA8DC1 /* Preview Content */,
 			);
 			path = SwiftLabEffective;
@@ -391,6 +419,7 @@
 				CEF223692B00053000FA8DC1 /* Nunito-ExtraLightItalic.ttf in Resources */,
 				CEF2237B2B00053000FA8DC1 /* Nunito-SemiBold.ttf in Resources */,
 				CEF223832B00053000FA8DC1 /* Poppins-ExtraBoldItalic.ttf in Resources */,
+				CE8FC1F12B02579800EBE442 /* Icons.xcassets in Resources */,
 				CEF2237E2B00053000FA8DC1 /* Nunito-BlackItalic.ttf in Resources */,
 				CEF2230E2AFFAD6200FA8DC1 /* Preview Assets.xcassets in Resources */,
 				CEF2236D2B00053000FA8DC1 /* Nunito-Light.ttf in Resources */,
@@ -415,6 +444,7 @@
 				CEF2230B2AFFAD6200FA8DC1 /* Assets.xcassets in Resources */,
 				CEF223782B00053000FA8DC1 /* Poppins-ExtraLight.ttf in Resources */,
 				CEF223862B00053000FA8DC1 /* Nunito-BoldItalic.ttf in Resources */,
+				CE8FC1EE2B02572000EBE442 /* Colors.xcassets in Resources */,
 				CEF2236E2B00053000FA8DC1 /* Nunito-Black.ttf in Resources */,
 				CEF223882B00053000FA8DC1 /* Poppins-Medium.ttf in Resources */,
 				CEF223752B00053000FA8DC1 /* Poppins-ThinItalic.ttf in Resources */,
@@ -450,8 +480,10 @@
 				CEF223092AFFAD5A00FA8DC1 /* ContentView.swift in Sources */,
 				CEF2233A2AFFBB8A00FA8DC1 /* CustomTabBar.swift in Sources */,
 				CEF223382AFFB57F00FA8DC1 /* ViewProfile.swift in Sources */,
+				CE8FC1F42B025AEE00EBE442 /* ColorTheme.swift in Sources */,
 				CEF223912B0162F200FA8DC1 /* CategoryView.swift in Sources */,
 				CEF2238F2B01543E00FA8DC1 /* WelcomeView.swift in Sources */,
+				CE8FC1F62B026D6E00EBE442 /* FontTheme.swift in Sources */,
 				CEF223932B01710400FA8DC1 /* NearDoctorsListView.swift in Sources */,
 				CEF2238B2B014CC500FA8DC1 /* CustomTextField.swift in Sources */,
 				CEF223072AFFAD5A00FA8DC1 /* SwiftLabEffectiveApp.swift in Sources */,

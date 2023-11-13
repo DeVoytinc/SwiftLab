@@ -45,16 +45,16 @@ struct CategoryView: View {
                 Image(category.imageName)
                     .resizable()
                     .scaledToFit()
-                    .colorMultiply(Color("myPrimaryColor"))
+                    .colorMultiply(ColorTheme.Primary)
                     .frame(width: 24, height: 24)
                     .clipShape(Circle())
                     .frame(width: 72, height: 72)
-                    .background(Color("mySecBGColor"))
+                    .background(ColorTheme.BG.BackgroundSecondary)
                     .clipShape(Circle())
                 
                 Text(category.name)
-                    .font(Font.custom("Poppins-Regular", size: 15))
-                    .foregroundColor(Color("myGrayColor"))
+                    .font(Font.custom(FontTheme.poppinsRegular, size: 15))
+                    .foregroundColor(ColorTheme.Text.Secondary)
             }
         }
     }

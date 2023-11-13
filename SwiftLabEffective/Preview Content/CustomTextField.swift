@@ -16,13 +16,13 @@ struct CustomTextField: View {
             Image("search")
                 .resizable()
                 .frame(width: 24, height: 24)
-                .colorMultiply(Color("myGrayColor"))
+                .colorMultiply(ColorTheme.Text.Secondary)
                 .padding(.leading, 16)
-            TextField("", text: $text, prompt: Text("Search doctor or health issue").foregroundColor(Color("myGrayColor")))
-                .font(Font.custom("Poppins-Regular", size: 15))
+            TextField("", text: $text, prompt: Text("Search doctor or health issue").foregroundColor(ColorTheme.Text.Secondary))
+                .font(Font.custom(FontTheme.poppinsRegular, size: 15))
                 .padding(.vertical, 16)
         }
-        .background(Color("mySecBGColor"))
+        .background(ColorTheme.BG.BackgroundSecondary)
         .cornerRadius(12)
     }
 }
