@@ -1,43 +1,4 @@
-//
-//  NearDoctorsListView.swift
-//  SwiftLabEffective
-//
-//  Created by  user on 13.11.2023.
-//
-
 import SwiftUI
-
-struct Doctor {
-    var id: UUID = UUID()
-    var imageName: String
-    var name: String
-    var specialization: String
-    var distance: Float
-    var mark: Float
-    var reviewsCount: Int
-    var openAtTime: String
-}
-
-struct NearDoctorsListView: View {
-    
-    let doctors: [Doctor] = [
-        Doctor(imageName: "doctor2", name: "Dr. Joseph Brostito", specialization: "Dental Specialist", distance: 1.2, mark: 4.8, reviewsCount: 120, openAtTime: "17:00"),
-        Doctor(imageName: "doctor1", name: "Dr. Imran Syahir", specialization: "General Doctor", distance: 1.2, mark: 4.8, reviewsCount: 120, openAtTime: "17:00"),
-    ]
-    
-    
-    var body: some View {
-        VStack{
-            ForEach(doctors.indices) { index in
-                DoctorView(doctor: doctors[index])
-                
-                if index != doctors.indices.last{
-                    Spacer().frame(height: 20)
-                }
-            }
-        }
-    }
-}
 
 struct DoctorView: View {
     var doctor: Doctor
@@ -96,5 +57,7 @@ struct DoctorView: View {
 }
 
 #Preview {
-    NearDoctorsListView()
+    let doctor: Doctor =
+        Doctor(imageName: "doctor2", name: "Dr. Joseph Brostito", specialization: "Dental Specialist", distance: 1.2, mark: 4.8, reviewsCount: 120, openAtTime: "17:00")
+    DoctorView(doctor: doctor)
 }

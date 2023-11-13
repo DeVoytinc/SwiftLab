@@ -1,10 +1,4 @@
 //
-//  CustomTextField.swift
-//  SwiftLabEffective
-//
-//  Created by  user on 13.11.2023.
-//
-
 import SwiftUI
 
 struct CustomTextField: View {
