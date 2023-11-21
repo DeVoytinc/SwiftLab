@@ -13,22 +13,21 @@ struct CategoryView: View {
                     .scaledToFit()
                     .colorMultiply(ColorTheme.Primary)
                     .frame(width: 24, height: 24)
-                    .clipShape(Circle())
                     .frame(width: 72, height: 72)
-                    .background(ColorTheme.BG.BackgroundSecondary)
+                    .background(ColorTheme.BackgroundSecondary)
                     .clipShape(Circle())
                 
                 Text(category.name)
-                    .font(Font.custom(FontTheme.poppinsRegular, size: 15))
-                    .foregroundColor(ColorTheme.Text.Secondary)
+                    .font(Font.custom(FontTheme.poppinsRegular, size: Sizes.TextMedium))
+                    .foregroundColor(ColorTheme.TextSecondary)
             }
         }
     }
 }
 
 #Preview {
-    let category: Category =
-        Category(imageName: "iconCovid", name: "Covid 19")
-    
-    CategoryView(category: category)
+    CategoryView(category: Category(
+        imageName: "iconCovid",
+        name: "Covid 19")
+    )
 }

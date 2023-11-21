@@ -21,12 +21,16 @@ struct ContentView: View {
                 TabView(selection: $selectTab){
                     ViewHome()
                         .tag(Tab.home)
+                        .accessibilityValue(Text("HomePage"))
                     ViewCalendar()
                         .tag(Tab.calendar)
+                        .accessibilityValue(Text("CalendarPage"))
                     ViewMessage()
                         .tag(Tab.message)
+                        .accessibilityValue(Text("MessagePage"))
                     ViewProfile()
                         .tag(Tab.profile)
+                        .accessibilityValue(Text("ProfilePage"))
                 }
             }
             VStack{

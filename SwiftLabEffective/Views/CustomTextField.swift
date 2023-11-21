@@ -10,13 +10,16 @@ struct CustomTextField: View {
             Image("search")
                 .resizable()
                 .frame(width: 24, height: 24)
-                .colorMultiply(ColorTheme.Text.Secondary)
+                .colorMultiply(ColorTheme.TextSecondary)
                 .padding(.leading, 16)
-            TextField("", text: $text, prompt: Text("Search doctor or health issue").foregroundColor(ColorTheme.Text.Secondary))
-                .font(Font.custom(FontTheme.poppinsRegular, size: 15))
+            TextField("", text: $text, prompt: Text("Search doctor or health issue")
+                .foregroundColor(ColorTheme.TextSecondary))
+                .font(Font.custom(
+                    FontTheme.poppinsRegular,
+                    size: Sizes.TextLarge))
                 .padding(.vertical, 16)
         }
-        .background(ColorTheme.BG.BackgroundSecondary)
+        .background(ColorTheme.BackgroundSecondary)
         .cornerRadius(12)
     }
 }
