@@ -44,17 +44,19 @@ struct CustomTabBar: View {
                             tab.rawValue)
                     .resizable()
                     .frame(width: 24, height: 24)
-                    .colorMultiply(selectedTab == tab ? ColorTheme.BottomNavBar.BottomNavBarContent : ColorTheme.Text.Secondary)
+                    .colorMultiply(selectedTab == tab ? ColorTheme.BottomNavBarContent : ColorTheme.TextSecondary)
                     
                     if selectedTab == tab{
                         Text(tabText)
-                            .foregroundColor(ColorTheme.BottomNavBar.BottomNavBarContent)
-                            .font(Font.custom(FontTheme.nunito, size: 14))
+                            .foregroundColor(ColorTheme.BottomNavBarContent)
+                            .font(Font.custom(
+                                FontTheme.nunito, 
+                                size: Sizes.TextMedium))
                     }
                     
                 }
                 .padding(12)
-                .background(ColorTheme.BottomNavBar.BottomNavBarChip)
+                .background(selectedTab == tab ? ColorTheme.BottomNavBarChip : .white)
                 .cornerRadius(12)
                 .onTapGesture {
                     withAnimation(.easeIn(duration: 0.1)){

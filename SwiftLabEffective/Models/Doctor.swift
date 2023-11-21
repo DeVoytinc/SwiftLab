@@ -1,10 +1,10 @@
 import Foundation
 
 struct Doctor {
-    var id: UUID = UUID()
-    var imageName: String
-    var name: String
-    var specialization: String
+    let id: UUID = UUID()
+    let imageName: String
+    let name: String
+    let specialization: String
     var distance: Float
     var mark: Float
     var reviewsCount: Int

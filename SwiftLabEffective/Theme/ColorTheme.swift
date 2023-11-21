@@ -10,27 +10,20 @@ import SwiftUI
 struct ColorTheme{
     
     static let Primary = Color("myPrimaryColor")
+    static let Background = Color("myBGColor")
+    static let BackgroundSecondary = Color("mySecBGColor")
     
-    
-    struct Text{
-        static let Yellow = Color("myYellow")
-        static let Primary = Color("myBlackText")
-        static let Secondary = Color("myGrayColor")
-        static let White = Color(.white)
-        static let LightBlue = Color("myLightBlue")
-    }
-    
-    struct BottomNavBar{
-        static let BottomNavBarContent = Color("bottomNavBarContent")
-        static let BottomNavBarChip = Color("bottomNavBarContent").opacity(0.10)
-    }
-    
-    struct BG{
-        static let Background = Color("myBGColor")
-        static let BackgroundSecondary = Color("mySecBGColor")
-    }
-    
-    
+    //Text
+    static let TextYellow = Color("myYellow")
+    static let TextPrimary = Color("myBlackText")
+    static let TextSecondary = Color("myGrayColor")
+    static let TextWhite = Color(.white)
+    static let TextLightBlue = Color("myLightBlue")
+
+    // Bottom navigation bar
+    static let BottomNavBarContent = Color("bottomNavBarContent")
+    static let BottomNavBarChip = Color("bottomNavBarContent").opacity(0.10)
+
     
 
 }

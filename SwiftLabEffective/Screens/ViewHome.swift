@@ -17,9 +17,13 @@ struct ViewHome: View {
                     DoctorCard()
                     CustomTextField()
                     CategoryRowView()
+                    Spacer().frame(height: 5)
                     Text("Near Doctor")
-                        .font(Font.custom(FontTheme.poppinsBold, size: 16))
-                        .foregroundColor(ColorTheme.Text.Primary)
+                        .font(Font.custom(
+                            FontTheme.poppinsBold,
+                            size: Sizes.TextLarge))
+                        .fontWeight(.bold)
+                        .foregroundColor(ColorTheme.TextPrimary)
                     NearDoctorsListView()
                     Spacer().frame(height: 50)
                 }

@@ -1,6 +1,6 @@
 import Foundation
 
 struct Category {
-    var imageName: String
-    var name: String
+    let imageName: String
+    let name: String
 }

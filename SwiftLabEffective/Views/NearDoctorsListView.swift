@@ -3,8 +3,23 @@ import SwiftUI
 struct NearDoctorsListView: View {
     
     let doctors: [Doctor] = [
-        Doctor(imageName: "doctor2", name: "Dr. Joseph Brostito", specialization: "Dental Specialist", distance: 1.2, mark: 4.8, reviewsCount: 120, openAtTime: "17:00"),
-        Doctor(imageName: "doctor1", name: "Dr. Imran Syahir", specialization: "General Doctor", distance: 1.2, mark: 4.8, reviewsCount: 120, openAtTime: "17:00"),
+        Doctor(
+            imageName: "doctor2",
+            name: "Dr. Joseph Brostito",
+            specialization: "Dental Specialist",
+            distance: 1.2,
+            mark: 4.8,
+            reviewsCount: 120,
+            openAtTime: "17:00"),
+        Doctor(
+            imageName: "doctor1",
+            name: "Dr. Imran Syahir",
+            specialization: "General Doctor",
+            distance: 1.2,
+            mark: 4.8,
+            reviewsCount: 120,
+            openAtTime: "17:00"
+        ),
     ]
     
     var body: some View {
